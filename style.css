@@ -30,6 +30,9 @@ body {
 
 .movie-container {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .movie-container select {
@@ -42,6 +45,17 @@ body {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.arrow:after {
+    content: '';
+    display:inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    border-top: 0.1rem solid rgb(109, 109, 109);
+    border-right: 0.1rem solid rgb(109, 109, 109);
+    transform: rotate(45deg);
 }
 
 .seat.selected {
@@ -82,8 +96,7 @@ body {
 
 .showcase li {
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     margin: 0 10px;
 }
 
